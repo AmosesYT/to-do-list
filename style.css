@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+}
+
+body {
+    margin:5rem;
+    display:flex;
+    justify-content: center;
+    height:100vh;
+}
+
+#wrapper { 
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:380px;
+    height:55%;
+    border:2px solid grey;
+    border-radius:50px;
+}
+
+
+h1 {
+    font-size:30px;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+
+h1::after {
+    content:'';
+    height:2px;
+    width:14%;
+    background:grey;
+    position:absolute;
+    left:43%;
+    bottom:83%;
+}
+
+#container {
+    display:flex;
+}
+
+
+#toDoButton {
+    font-family:'Courier New', Courier, monospace;
+    width:100px;
+    height:40px;
+    margin-left:10px;
+    font-size:20px;
+    border-radius:5px;
+    background-color:hsl(0, 61%, 68%);
+    cursor:pointer;
+}
+
+#toDoButton:active {
+    background-color:hsl(0, 61%, 78%);
+}
+
+
+#inputField {
+    text-align: center;
+    margin-right:10px;
+    border-radius:5px;
+    height:90%;
+}
+
+.inputField::placeholder {
+    font-size:16px;
+}
+
+#toDoContainer {
+    overflow:hidden;
+    display:flex;
+    text-align:center;
+    flex-direction:column;
+    flex-wrap:wrap;
+    margin-top:.75rem;
+    font-size:22px;
+    height:75%;
+    width:100%;
+    gap:6px;
+}
+
+.paragraph-styling {
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    align-items:center;
+    margin:0 5px 0px 5px;
+    font-weight:600;
+}
+
+.custom-button {
+    position:absolute;
+    right:40.5%;
+    margin-right:5px;
+    width:25px;
+    height:25px;
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.custom-button:hover {
+    background-color:hsl(0, 0%, 65%);
+}
+
+.newInput {
+    position:absolute;
+    left:41%;
+   
+    
+}
+
+@media (max-width: 992px) {
+    .newInput {
+        left:32.5%;
+    }
+    .custom-button {
+        right:31.5%;
+    }
+    h1::after {
+        width:23%;
+        left:38%;
+    }
+
+}
+
+
