@@ -73,24 +73,22 @@ h1::after {
 }
 
 #toDoContainer {
-    overflow:auto;
-    /* display:flex; */
+    overflow:hidden;
+    display:flex;
     text-align:center;
-    /* flex-direction:column; */
-    /* flex-wrap:wrap; */
+    flex-direction:column;
+    flex-wrap:wrap;
     margin-top:.75rem;
     font-size:22px;
     height:75%;
     width:100%;
-    /* gap:6px; */
+    gap:6px;
 }
-
-
 
 .paragraph-styling {
     list-style:none;
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
     flex-direction:row;
     align-items:center;
     margin:0 5px 0px 5px;
@@ -98,6 +96,8 @@ h1::after {
 }
 
 .custom-button {
+    position:absolute;
+    right:40.5%;
     margin-right:5px;
     width:25px;
     height:25px;
@@ -111,9 +111,24 @@ h1::after {
     background-color:hsl(0, 0%, 65%);
 }
 
+.newInput {
+    position:absolute;
+    left:41%;
+    
+}
+
 @media (max-width: 992px) {
+    .newInput {
+        left:32.5%;
+    }
+    .custom-button {
+        right:31.5%;
+    }
+    
     h1::after {
         width:23%;
         left:38%;
     }
+
 }
+
